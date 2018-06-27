@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:id="@+id/details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/details_layout_padding">
+
+            <RelativeLayout
+                android:id="@+id/product_details_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/product_and_supplier_details_margin_bottom"
+                android:layout_marginTop="@dimen/product_and_supplier_details_margin_top">
+
+                <View
+                    android:id="@+id/section_line_product_details"
+                    style="@style/SeparatorLine" />
+
+                <TextView
+                    android:id="@+id/products_details_title_container"
+                    style="@style/TitleProductAndSupplierDetails"
+                    android:text="@string/product_details" />
+
+                <LinearLayout
+                    android:id="@+id/product_details"
+                    style="@style/ProductAndSupplerDetails"
+                    android:layout_below="@id/products_details_title_container">
+
+                    <TextView
+                        android:id="@+id/product_name"
+                        style="@style/ProductName"
+                        tools:text="Laptop HP" />
+
+                    <View style="@style/Separator" />
+
+                    <LinearLayout style="@style/PriceQuantityPhoneButtonLinearLayout">
+
+                        <TextView
+                            style="@style/PriceQuantityPhone"
+                            android:text="@string/price" />
+
+                        <TextView
+                            android:id="@+id/price_amount"
+                            style="@style/PriceAndPhone"
+                            tools:text="$699.99" />
+
+                    </LinearLayout>
+
+                    <View style="@style/Separator" />
+
+                    <RelativeLayout style="@style/PriceQuantityPhoneButtonLinearLayout">
+
+                        <TextView
+                            style="@style/PriceQuantityPhone"
+                            android:layout_height="38dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/quantity" />
+
+                        <ImageButton
+                            android:id="@+id/button_quantity_increase"
+                            style="@style/ImageButtonIncreaseIncreaseAndDecrease"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="@dimen/increase_button_margin_right"
+                            android:layout_marginRight="@dimen/increase_button_margin_right"
+                            android:contentDescription="@string/increase_button"
+                            app:srcCompat="@drawable/increase_button" />
+
+                        <TextView
+                            android:id="@+id/quantity_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="31dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginEnd="@dimen/quantity_amount_margin_right"
+                            android:layout_marginRight="@dimen/quantity_amount_margin_right"
+                            android:gravity="center_vertical"
+                            tools:text="10" />
+
+                        <ImageButton
+                            android:id="@+id/button_quantity_decrease"
+                            style="@style/ImageButtonIncreaseIncreaseAndDecrease"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:contentDescription="@string/decrease_button"
+                            app:srcCompat="@drawable/decrease_button" />
+
+                    </RelativeLayout>
+
+                    <View style="@style/Separator" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/supplier_details_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/product_and_supplier_details_margin_bottom"
+                android:layout_marginTop="@dimen/product_and_supplier_details_margin_top">
+
+                <View
+                    android:id="@+id/section_line_supplier_details"
+                    style="@style/SeparatorLine" />
+
+                <TextView
+                    android:id="@+id/supplier_details_title_container"
+                    style="@style/TitleProductAndSupplierDetails"
+                    android:text="@string/supplier_details" />
+
+                <LinearLayout
+                    android:id="@+id/supplier_details"
+                    style="@style/ProductAndSupplerDetails"
+                    android:layout_below="@id/supplier_details_title_container">
+
+                    <TextView
+                        android:id="@+id/supplier_name"
+                        style="@style/SupplierName"
+                        tools:text="eMAG" />
+
+                    <View style="@style/Separator" />
+
+                    <LinearLayout style="@style/PriceQuantityPhoneButtonLinearLayout">
+
+                        <TextView
+                            style="@style/PriceQuantityPhone"
+                            android:text="@string/phone" />
+
+                        <TextView
+                            android:id="@+id/supplier_phone"
+                            style="@style/PriceAndPhone"
+                            tools:text="+4-076-658-4689" />
+
+                    </LinearLayout>
+
+                    <View style="@style/Separator" />
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floating_action_button_id"
+        style="@style/FloatingActionButton"
+        app:srcCompat="@drawable/floating_action_button" />
+
+</RelativeLayout>

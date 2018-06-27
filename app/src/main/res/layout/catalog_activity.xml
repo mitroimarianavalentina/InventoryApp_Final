@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".CatalogActivity">
+
+    <ListView
+        android:id="@+id/catalog_list"
+        style="@style/CatalogActivityView" />
+
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_view_img"
+            android:contentDescription="@string/empty_view_image"
+            style="@style/EmptyStateImage" />
+
+        <TextView
+            android:id="@+id/empty_view_title"
+            android:layout_below="@id/empty_view_img"
+            android:text="@string/empty_view_title"
+            style="@style/EmptyStateTitle" />
+
+        <TextView
+            android:id="@+id/empty_view_instructions"
+            android:layout_below="@id/empty_view_title"
+            android:text="@string/empty_view_instructions"
+            style="@style/EmptyStateText" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/catalog_floating_action_button"
+        app:srcCompat="@drawable/floating_button_add_product"
+        style="@style/FloatingActionButton" />
+
+</RelativeLayout>

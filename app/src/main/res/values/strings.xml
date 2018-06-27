@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!--INSERT MESSAGES-->
+    <string name="product_save_success">Product saved with id: </string>
+    <string name="product_save_error">Error with saving the product.</string>
+
+    <!--UPDATE MESSAGES-->
+    <string name="update_msg_success">Product updated successfully.</string>
+    <string name="update_msg_error">Error with updating product.</string>
+    <string name="stock_msg_success">Stock updated successfully.</string>
+    <string name="stock_msg_error">Error with updating stock.</string>
+
+    <!--DELETE MESSAGES-->
+    <string name="product_deleted_success">Product deleted successfully.</string>
+    <string name="product_deleted_error">Error with deleting product.</string>
+    <string name="all_products_deleted_success">All products deleted successfully.</string>
+    <string name="question_about_deleting">Are you sure you want to delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+    <!--DISCARD MESSAGES-->
+    <string name="question_about_discarding_editing">Discard the changes and quit editing?</string>
+    <string name="discard">Discard</string>
+    <string name="keep_editing">Keep Editing</string>
+
+    <!--ITEM-->
+    <string name="sale_button">Sale</string>
+
+    <string name="supplier_unknown"> Supplier Unknown </string>
+
+    <!--EDITOR ACTIVITY-->
+    <string name="add_product">Add Product</string>
+    <string name="edit_product">Edit Product</string>
+    <string name="product_details">Product Details</string>
+    <string name="supplier_details">Supplier Details</string>
+    <string name="product_name_placeholder">Product Name</string>
+    <string name="author_placeholder">Author</string>
+    <string name="price_placeholder">Price</string>
+    <string name="currency_placeholder">$</string>
+    <string name="quantity_placeholder">Quantity</string>
+    <string name="supplier_name_placeholder">Supplier Name</string>
+    <string name="supplier_phone_placeholder">Supplier Phone</string>
+    <string name="error_saving_empty_fields">Could not save product.\nSome fields are empty.</string>
+
+    <!--DETAILS ACTIVITY-->
+    <string name="increase_button">Increment Quantity Button</string>
+    <string name="decrease_button">Decrement Quantity Button</string>
+    <string name="author">Author</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="phone">Phone</string>
+
+    <!--EMPTY STATE VIEW-->
+    <string name="empty_view_title">No Products Found</string>
+    <string name="empty_view_image">Empty Shop</string>
+    <string name="empty_view_instructions">Please add a product to the inventory, by tapping the plus button below.</string>
+
+    <!--MENU ACTIONS-->
+    <string name="delete_all_products">Delete All Products</string>
+    <string name="save_product">Save Product</string>
+    <string name="delete_product">Delete Product</string>
+</resources>

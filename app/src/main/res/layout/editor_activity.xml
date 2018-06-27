@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".EditorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/editor_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/editor_layout_padding">
+
+            <RelativeLayout
+                android:id="@+id/product_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/product_and_supplier_details_margin_top"
+                android:layout_marginBottom="@dimen/product_and_supplier_details_margin_bottom">
+
+                <View
+                    android:id="@+id/product_section_title_line"
+                    style="@style/SeparatorLine" />
+
+                <TextView
+                    android:id="@+id/product_section_title"
+                    android:text="@string/product_details"
+                    style="@style/TitleProductAndSupplierDetails" />
+
+                <LinearLayout
+                    android:id="@+id/product_fields"
+                    android:layout_below="@id/product_section_title"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_view_margin_top">
+
+                    <EditText
+                        android:id="@+id/product_name"
+                        android:inputType="textCapWords"
+                        android:hint="@string/product_name_placeholder"
+                        style="@style/EditViewStyle" />
+
+                    <RelativeLayout style="@style/PriceFieldContainer">
+
+                        <EditText
+                            android:id="@+id/product_price"
+                            android:inputType="numberDecimal"
+                            android:hint="@string/price_placeholder"
+                            android:maxLength="7"
+                            style="@style/PriceFieldStyle" />
+
+                        <TextView
+                            android:text="@string/currency_placeholder"
+                            style="@style/CurrencySymbol" />
+
+                    </RelativeLayout>
+
+                    <EditText
+                        android:id="@+id/product_quantity"
+                        android:inputType="number"
+                        android:hint="@string/quantity_placeholder"
+                        android:maxLength="7"
+                        style="@style/EditViewStyle" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/supplier_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/product_and_supplier_details_margin_top"
+                android:layout_marginBottom="@dimen/product_and_supplier_details_margin_bottom">
+
+                <View
+                    android:id="@+id/supplier_section_title_line"
+                    style="@style/SeparatorLine" />
+
+                <TextView
+                    android:id="@+id/supplier_section_title"
+                    android:text="@string/supplier_details"
+                    style="@style/TitleProductAndSupplierDetails" />
+
+                <LinearLayout
+                    android:id="@+id/supplier_fields"
+                    android:layout_below="@id/supplier_section_title"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/edit_view_margin_top">
+
+                    <EditText
+                        android:id="@+id/supplier_name"
+                        android:inputType="textCapWords"
+                        android:hint="@string/supplier_name_placeholder"
+                        style="@style/EditViewStyle" />
+
+                    <EditText
+                        android:id="@+id/supplier_phone"
+                        android:inputType="phone"
+                        android:hint="@string/supplier_phone_placeholder"
+                        style="@style/EditViewStyle" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save_fab"
+        app:srcCompat="@drawable/floating_button_save_product"
+        style="@style/FloatingActionButton" />
+
+</RelativeLayout>

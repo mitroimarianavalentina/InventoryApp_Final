@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ListItem">
+
+    <RelativeLayout
+        android:id="@+id/list_item"
+        style="@style/ListItemContainer">
+
+        <RelativeLayout
+            android:id="@+id/title_list_item"
+            style="@style/ListItemTitle"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/price_and_quantity_list_item_section">
+
+            <TextView
+                android:id="@+id/item_product_name"
+                style="@style/ItemProductName"
+                android:layout_width="@dimen/list_view_product_name_and_quantity_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                tools:text="Nail Polish" />
+
+            <TextView
+                android:id="@+id/item_quantity"
+                style="@style/ItemProductName"
+                android:layout_width="@dimen/list_view_product_name_and_quantity_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_product_name"
+                tools:text="Quantity" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/price_and_quantity_list_item_section"
+            style="@style/PriceAndQuantityListItemSection"
+            android:layout_height="@dimen/price_and_quantity_list_item_section_height"
+            android:layout_alignRight="@+id/divider"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/product_title_and_supplier_margin_top">
+
+            <TextView
+                android:id="@+id/item_product_price"
+                style="@style/ProductPriceListItem"
+                tools:text="$5.99" />
+
+            <TextView
+                android:id="@+id/item_product_quantity"
+                style="@style/ItemProductQuantity"
+                android:layout_alignRight="@id/item_product_price"
+                tools:text="99" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            style="@style/DividerListItem"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp" />
+
+        <RelativeLayout
+            android:id="@+id/item_bottom_section"
+            style="@style/SupplierListItemSection"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            >
+
+            <TextView
+                android:id="@+id/item_supplier_name"
+                style="@style/SupplierNameListItem"
+                android:layout_toLeftOf="@id/item_sale_btn"
+                tools:text="Loreal Supplier" />
+
+            <Button
+                android:id="@+id/item_sale_btn"
+                style="@style/SaleButtonListItem"
+                android:text="@string/sale_button" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

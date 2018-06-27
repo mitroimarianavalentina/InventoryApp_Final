@@ -1,0 +1,280 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorNevadaGray</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+        <item name="android:textColorSecondary">@color/colorAltoTransparent</item>
+        <item name="android:textColorPrimaryInverse">@color/colorNevadaGray</item>
+        <item name="android:textColorSecondaryInverse">@color/colorSilverChalice</item>
+    </style>
+
+    <style name="CatalogActivityView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingTop">@dimen/catalog_list_view_padding</item>
+        <item name="android:paddingBottom">@dimen/catalog_list_view_padding</item>
+    </style>
+
+    <style name="FloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/floating_action_button_margin</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="SeparatorLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/separator_line_height</item>
+        <item name="android:layout_marginTop">@dimen/separator_line_margin</item>
+        <item name="android:layout_marginBottom">@dimen/separator_line_margin</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/colorTransparentWhite</item>
+    </style>
+
+    <style name="TitleProductAndSupplierDetails">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/product_title_and_supplier_height</item>
+        <item name="android:layout_marginLeft">@dimen/product_title_and_supplier_margin_start</item>
+        <item name="android:layout_marginTop">@dimen/product_title_and_supplier_margin_top</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">@dimen/product_title_and_supplier_name_padding</item>
+        <item name="android:paddingRight">@dimen/product_title_and_supplier_name_padding</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">@dimen/product_title_and_supplier_name_text_size</item>
+        <item name="android:textColor">@color/colorAltoTransparent</item>
+        <item name="android:background">@color/colorNevadaGray</item>
+    </style>
+
+    <style name="EditViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/edit_view_margin_bottom</item>
+        <item name="android:padding">@dimen/edit_view_padding</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+        <item name="android:textColorHint">@color/colorAltoTransparent</item>
+        <item name="android:background">@drawable/background_edit_view</item>
+    </style>
+
+    <style name="PriceFieldContainer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/price_edit_view_margin_bottom</item>
+    </style>
+
+    <style name="PriceFieldStyle" parent="EditViewStyle">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginBottom">@dimen/price_edit_view_style_margin_bottom</item>
+        <item name="android:paddingRight">@dimen/price_edit_view_style_padding_end</item>
+    </style>
+
+    <style name="ProductAndSupplerDetails">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/product_and_supplier_details_container_margin_top</item>
+        <item name="android:padding">@dimen/product_and_supplier_details_container_padding</item>
+        <item name="android:background">@color/ProductAndSupplerDetailsBackground</item>
+    </style>
+
+    <style name="PriceQuantityPhoneButtonLinearLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/price_quantity_phone_linear_layout_padding</item>
+        <item name="android:paddingBottom">@dimen/price_quantity_phone_linear_layout_padding</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DetailsText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+        <item name="android:textSize">@dimen/details_text_size</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="ProductName" parent="DetailsText">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">@dimen/product_name_and_supplier_name_padding</item>
+        <item name="android:paddingBottom">@dimen/product_name_and_supplier_name_padding</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/product_name_and_supplier_name_text_size</item>
+    </style>
+
+    <style name="SupplierName" parent="ProductName">
+        <item name="android:textSize">@dimen/supplier_name_text_size</item>
+    </style>
+
+    <style name="PriceAndPhone" parent="DetailsText">
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">end</item>
+    </style>
+
+    <style name="PriceQuantityPhone" parent="DetailsText">
+        <item name="android:layout_width">@dimen/price_quantity_phone_width</item>
+        <item name="android:textSize">@dimen/price_quantity_phone_text_size</item>
+        <item name="android:textColor">@color/colorAltoTransparent</item>
+    </style>
+
+
+    <style name="Separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/separator_height</item>
+        <item name="android:layout_marginTop">@dimen/separator_margin</item>
+        <item name="android:layout_marginBottom">@dimen/separator_margin</item>
+        <item name="android:background">@color/colorTransparentWhite</item>
+    </style>
+
+    <style name="ImageButtonIncreaseIncreaseAndDecrease">
+        <item name="android:layout_width">@dimen/increase_decrease_button_size</item>
+        <item name="android:layout_height">@dimen/increase_decrease_button_size</item>
+        <item name="android:layout_marginLeft">@dimen/increase_decrease_button_margin_start</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    </style>
+
+    <style name="ListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingTop">@dimen/list_item_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/list_item_padding_vertical</item>
+        <item name="android:paddingLeft">@dimen/list_item_padding_horizontal</item>
+        <item name="android:paddingRight">@dimen/list_item_padding_horizontal</item>
+    </style>
+
+    <style name="ListItemContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/list_item_container_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@color/ListItemContainerBackground</item>
+    </style>
+
+    <style name="ListItemTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="PriceAndQuantityListItemSection">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="SupplierListItemSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="DividerListItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_list_item_height</item>
+        <item name="android:layout_marginTop">@dimen/divider_list_item_margin</item>
+        <item name="android:layout_marginBottom">@dimen/divider_list_item_margin</item>
+        <item name="android:background">@color/colorTransparentWhite</item>
+    </style>
+
+    <style name="ItemProductName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/product_name_and_quantity_list_item_margin_bottom</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+        <item name="android:textSize">@dimen/product_name_and_quantity_list_item_text_size</item>
+    </style>
+
+
+    <style name="ProductPriceListItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/product_price_and_quantity_text_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+    </style>
+
+    <style name="ItemProductQuantity">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/product_price_and_quantity_text_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@color/colorAltoTransparent</item>
+    </style>
+
+    <style name="SupplierNameListItem">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:textSize">@dimen/supplier_name_list_item_text_size</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+    </style>
+
+    <style name="SaleButtonListItem">
+        <item name="android:layout_width">@dimen/sale_button_list_item_width</item>
+        <item name="android:layout_height">@dimen/sale_button_list_item_height</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:textColor">@color/colorSeashellWhite</item>
+        <item name="android:textSize">@dimen/sale_button_list_item_text_size</item>
+    </style>
+
+    <style name="EmptyStateImage">
+        <item name="android:layout_width">@dimen/empty_state_image_size</item>
+        <item name="android:layout_height">@dimen/empty_state_image_size</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:src">@drawable/empty_state_image</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="EmptyStateText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/empty_state_text_margin_top</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/empty_state_text_padding</item>
+        <item name="android:paddingRight">@dimen/empty_state_text_padding</item>
+        <item name="android:textColor">@color/colorAltoTransparent</item>
+        <item name="android:textSize">@dimen/empty_state_text_size</item>
+    </style>
+
+    <style name="EmptyStateTitle" parent="EmptyStateText">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/colorAltoWhite</item>
+        <item name="android:textSize">@dimen/empty_state_title_text_size</item>
+    </style>
+
+    <style name="EmptyStateInstructions" parent="EmptyStateText">
+        <item name="android:textSize">@dimen/empty_instructions_text_size</item>
+    </style>
+
+    <style name="CurrencySymbol">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">@dimen/currency_symbol_margin_end</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">@dimen/currency_symbol_text_size</item>
+        <item name="android:textColor">@color/colorAltoTransparent</item>
+    </style>
+</resources>

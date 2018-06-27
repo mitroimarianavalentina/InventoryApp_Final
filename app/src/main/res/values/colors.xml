@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#800033</color>
+    <color name="colorPrimaryDark">#800033</color>
+    <color name="colorAccent">#800033</color>
+
+    <color name="colorNevadaGray">#62727b</color>
+    <color name="colorSilverChalice">#ababab</color>
+    <color name="colorAltoTransparent">#96d3d3d3</color>
+    <color name="colorAltoWhite">#d3d3d3</color>
+    <color name="colorSeashellWhite">#f1f1f1</color>
+    <color name="colorTransparentWhite">#14f1f1f1</color>
+    <color name="ProductAndSupplerDetailsBackground">#8237474f</color>
+    <color name="ListItemContainerBackground">#8237474f </color>
+</resources>

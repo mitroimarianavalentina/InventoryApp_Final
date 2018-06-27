@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="catalog_list_view_padding">4dp</dimen>
+
+    <dimen name="floating_action_button_margin">24dp</dimen>
+
+    <dimen name="editor_layout_padding">16dp</dimen>
+    <dimen name="list_view_product_name_and_quantity_width">247dp</dimen>
+    <dimen name="price_and_quantity_list_item_section_height">58dp</dimen>
+
+    <dimen name="product_and_supplier_details_margin_top">8dp</dimen>
+    <dimen name="product_and_supplier_details_margin_bottom">24dp</dimen>
+    <dimen name="separator_line_height">1dp</dimen>
+    <dimen name="separator_line_margin">8dp</dimen>
+    <dimen name="product_title_and_supplier_height">16dp</dimen>
+    <dimen name="product_title_and_supplier_margin_start">32dp</dimen>
+    <dimen name="product_title_and_supplier_margin_top">-1dp</dimen>
+    <dimen name="product_title_and_supplier_name_padding">8dp</dimen>
+    <dimen name="product_title_and_supplier_name_text_size">12sp</dimen>
+
+    <dimen name="edit_view_margin_top">16dp</dimen>
+    <dimen name="edit_view_margin_bottom">8dp</dimen>
+    <dimen name="edit_view_padding">16dp</dimen>
+    <dimen name="currency_symbol_margin_end">16dp</dimen>
+    <dimen name="currency_symbol_text_size">16sp</dimen>
+    <dimen name="price_edit_view_margin_bottom">8dp</dimen>
+    <dimen name="price_edit_view_style_margin_bottom">0dp</dimen>
+    <dimen name="price_edit_view_style_padding_end">40dp</dimen>
+
+    <dimen name="details_layout_padding">16dp</dimen>
+    <dimen name="product_and_supplier_details_container_margin_top">16dp</dimen>
+    <dimen name="product_and_supplier_details_container_padding">16dp</dimen>
+    <dimen name="price_quantity_phone_linear_layout_padding">4dp</dimen>
+    <dimen name="details_text_size">16sp</dimen>
+    <dimen name="product_name_and_supplier_name_padding">4dp</dimen>
+    <dimen name="product_name_and_supplier_name_text_size">22sp</dimen>
+    <dimen name="supplier_name_text_size">18sp</dimen>
+    <dimen name="price_quantity_phone_width">80dp</dimen>
+    <dimen name="price_quantity_phone_text_size">14sp</dimen>
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="separator_margin">12dp</dimen>
+    <dimen name="increase_decrease_button_size">30dp</dimen>
+    <dimen name="increase_decrease_button_margin_start">16dp</dimen>
+
+    <dimen name="list_item_padding_vertical">4dp</dimen>
+    <dimen name="list_item_padding_horizontal">8dp</dimen>
+    <dimen name="list_item_container_padding">16dp</dimen>
+    <dimen name="item_right_section_min_width">80dp</dimen>
+    <dimen name="divider_list_item_height">1dp</dimen>
+    <dimen name="divider_list_item_margin">16dp</dimen>
+    <dimen name="product_name_and_quantity_list_item_margin_bottom">4dp</dimen>
+    <dimen name="product_name_and_quantity_list_item_text_size">20sp</dimen>
+    <dimen name="product_price_and_quantity_text_size">16sp</dimen>
+    <dimen name="supplier_name_list_item_text_size">16sp</dimen>
+    <dimen name="sale_button_list_item_width">60dp</dimen>
+    <dimen name="sale_button_list_item_height">30dp</dimen>
+    <dimen name="sale_button_list_item_text_size">13sp</dimen>
+
+    <dimen name="empty_state_image_size">128dp</dimen>
+    <dimen name="empty_state_text_margin_top">16dp</dimen>
+    <dimen name="empty_state_text_padding">28dp</dimen>
+    <dimen name="empty_state_text_size">16sp</dimen>
+    <dimen name="empty_state_title_text_size">20sp</dimen>
+    <dimen name="empty_instructions_text_size">14sp</dimen>
+
+    <dimen name="increase_button_margin_right">134dp</dimen>
+    <dimen name="quantity_amount_margin_right">68dp</dimen>
+</resources>
