@@ -29,10 +29,11 @@ public class Product {
 
     /**
      * The Product object constructor.
-     * @param productName The name of the product.
-     * @param price The product price.
-     * @param quantity How many products we have.
-     * @param supplierName The name of the supplier.
+     *
+     * @param productName   The name of the product.
+     * @param price         The product price.
+     * @param quantity      How many products we have.
+     * @param supplierName  The name of the supplier.
      * @param supplierPhone The supplier's phone number.
      */
     public Product(String productName, float price, int quantity, String supplierName, String supplierPhone) {
@@ -77,18 +78,4 @@ public class Product {
     public String getSupplierPhone() {
         return supplierPhone;
     }
-
-//    /**
-//     * Overrides the toString method for debugging purposes.
-//     * @return Returns a concatenated string with all the fields contents.
-//     */
-//    @Override
-//    public String toString() {
-//        return "Product {" +
-//                "productName='" + productName + "', " +
-//                "mProductPrice=" + mProductPrice + ", " +
-//                "productQuantity=" + productQuantity + ", " +
-//                "supplierName='" + supplierName + "', " +
-//                "supplierPhone='" + supplierPhone + "'}";
-//    }
 }

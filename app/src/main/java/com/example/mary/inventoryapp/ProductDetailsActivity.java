@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -67,6 +68,11 @@ public class ProductDetailsActivity extends AppCompatActivity implements LoaderM
     private ImageButton incrementButton;
     private ImageButton decrementButton;
 
+    /**
+     * declare as global the call button
+     */
+    private Button callButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,6 +84,8 @@ public class ProductDetailsActivity extends AppCompatActivity implements LoaderM
         supplierPhoneTextView = findViewById(R.id.supplier_phone);
         incrementButton = findViewById(R.id.button_quantity_increase);
         decrementButton = findViewById(R.id.button_quantity_decrease);
+        callButton = findViewById(R.id.call_button);
+
 
 
         /**
@@ -198,6 +206,10 @@ public class ProductDetailsActivity extends AppCompatActivity implements LoaderM
             productQuantityTextView.setText(formatQuantity(productQuantity));
             supplierNameTextView.setText(supplierName);
             supplierPhoneTextView.setText(supplierPhone);
+
+            // Set Click Listener for the Call Supplier Button.
+            // We do this here to make sure that we have the phone number.
+            if (!supplierPhone.isEmpty()) callButton.setOnClickListener(view -> launchCall(supplierPhone));
         }
     }
 
@@ -215,17 +227,6 @@ public class ProductDetailsActivity extends AppCompatActivity implements LoaderM
     }
 
 
-//    private void findAllViews() {
-//        productNameTextView = findViewById(R.id.product_name);
-//        productPriceTextView = findViewById(R.id.price_amount);
-//        productQuantityTextView = findViewById(R.id.quantity_amount);
-//        supplierNameTextView = findViewById(R.id.supplier_name);
-//        supplierPhoneTextView = findViewById(R.id.supplier_phone);
-//        incrementButton = findViewById(R.id.button_quantity_increase);
-//        decrementButton = findViewById(R.id.button_quantity_decrease);
-//        floatingActionButton = findViewById(R.id.floating_action_button_id);
-//    }
-
     /** Method to launch the Editor Activity with the current product Uri. */
     private void launchEditorActivity() {
         if (currentProductUri != null) {
@@ -236,17 +237,17 @@ public class ProductDetailsActivity extends AppCompatActivity implements LoaderM
         finish();
     }
 
-//    /** Method to launch Phone Dialer app, to call the specified Supplier Phone number. */
-//    private void launchCall(String phone) {
-//        if (!phone.isEmpty()) {
-//            Uri phoneNumber = Uri.parse("tel:" + phone);
-//            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
-//            dialIntent.setData(phoneNumber);
-//            if (dialIntent.resolveActivity(getPackageManager()) != null) {
-//                startActivity(dialIntent);
-//            }
-//        }
-//    }
+    /** Method to launch Phone Dialer app, to call the specified Supplier Phone number. */
+    private void launchCall(String phone) {
+        if (!phone.isEmpty()) {
+            Uri phoneNumber = Uri.parse("tel:" + phone);
+            Intent dialIntent = new Intent(Intent.ACTION_DIAL);
+            dialIntent.setData(phoneNumber);
+            if (dialIntent.resolveActivity(getPackageManager()) != null) {
+                startActivity(dialIntent);
+            }
+        }
+    }
 
     /** Method to increment the current product quantity by one. */
     private void incrementQuantity() {

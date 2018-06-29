@@ -12,4 +12,5 @@
     <color name="colorTransparentWhite">#14f1f1f1</color>
     <color name="ProductAndSupplerDetailsBackground">#8237474f</color>
     <color name="ListItemContainerBackground">#8237474f </color>
+    <color name="call_button_background">#800033</color>
 </resources>

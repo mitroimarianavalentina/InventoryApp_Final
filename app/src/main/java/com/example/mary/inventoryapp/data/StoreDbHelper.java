@@ -45,29 +45,6 @@ public class StoreDbHelper extends SQLiteOpenHelper {
         db.execSQL(SQL_CREATE_PPRODUCTS_TABLE);
     }
 
-//    // SQL for table creation and deletion.
-//    private static final String SQL_CREATE_TABLE =
-//            "CREATE TABLE " + TableEntry.TABLE_NAME + " (" +
-//                    TableEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
-//                    TableEntry.COLUMN_PRODUCT_NAME + " TEXT NOT NULL," +
-//                    TableEntry.COLUMN_PRICE + " REAL NOT NULL DEFAULT 0," +
-//                    TableEntry.COLUMN_QUANTITY + " INTEGER NOT NULL DEFAULT 0," +
-//                    TableEntry.COLUMN_SUPPLIER_NAME + " TEXT," +
-//                    TableEntry.COLUMN_SUPPLIER_PHONE + " TEXT NOT NULL)";
-//    private static final String SQL_DELETE_TABLE =
-//            "DROP TABLE IF EXISTS " + TableEntry.TABLE_NAME;
-//
-//    /**
-//     * Override for the onCreate method.
-//     * This method calls SQL syntax for the database creation.
-//     *
-//     * @param db The SQLite database to create.
-//     */
-//    @Override
-//    public void onCreate(SQLiteDatabase db) {
-//        db.execSQL(SQL_CREATE_TABLE);
-//    }
-
     /**
      * Override for the onUpgrade method.
      * This method is used for the cases in which the database schema changes.

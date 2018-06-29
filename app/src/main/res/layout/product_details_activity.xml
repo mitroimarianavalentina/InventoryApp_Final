@@ -156,9 +156,24 @@
 
                     <View style="@style/Separator" />
 
+                    <LinearLayout
+                        android:gravity="end"
+                        style="@style/PriceQuantityPhoneButtonLinearLayout">
+
+                        <Button
+                            android:id="@+id/call_button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/call_button_background"
+                            android:text="@string/call_button" />
+
+                    </LinearLayout>
+
                 </LinearLayout>
+
             </RelativeLayout>
         </LinearLayout>
+
     </ScrollView>
 
     <android.support.design.widget.FloatingActionButton
